@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  /*   ## Colors
+
+### Primary */
+
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+
+  /* ### Neutral */
+
+  --white: hsl(0, 0%, 100%);
+  --veryLightGrayishBlue: hsl(210, 60%, 98%);
+  --lightGrayishBlueOne: hsl(211, 68%, 94%);
+  --lightGrayishBlueSecond: hsl(205, 33%, 90%);
+  --GrayishBlue: hsl(219, 14%, 63%);
+  --darkGrayishBlue: hsl(219, 12%, 42%);
+  --veryDarkBlue: hsl(224, 21%, 14%);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.point-notification {
+  color: var(--red);
+}
+
+.section-notification {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-notification h3 {
+  margin-left: 10%;
+  font-weight: 800;
+}
+
+.counter {
+  background-color: var(--blue);
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 200px;
+}
+
+.section-notification a {
+  margin-right: 10%;
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+}
+.section-notification a:hover {
+  color: var(--blue);
+}
+
+.section-container-main {
+  background-color: aqua;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.card-notification {
+  background-color: white;
+  height: autoh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-notification {
+  height: auto;
+  width: 85%;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+}
+.user-notification.active {
+  height: auto;
+  width: 85%;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: var(--veryLightGrayishBlue);
+  display: flex;
+}
+.user-notification:hover {
+  background-color: var(--veryLightGrayishBlue);
+}
+
+.user-notification img {
+  height: 40px;
+  margin: 20px 10px 0px;
+}
+.user-notification p {
+  font-size: 14px;
+  padding: 20px 0px 0px 0px;
+}
+.post {
+  color: var(--darkGrayishBlue);
+  font-weight: bold;
+}
+.post a {
+  text-decoration: none;
+  font-weight: 800;
+}
+.post:hover {
+  color: var(--blue);
+}
+
+.message {
+  border: 1px solid rgba(128, 128, 128, 0.349);
+  color: var();
+}
+.message:hover {
+  border: 1px solid rgba(128, 128, 128, 0.349);
+  background-color: var(--lightGrayishBlueSecond);
+}
+
+.user-name {
+  color: var(--veryDarkBlue);
+}
+.user-name:hover {
+  color: var(--blue);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .section-container-main {
+    background-color: var(--veryLightGrayishBlue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .card-notification {
+    height: auto;
+    width: 50%;
+    border-radius: 20px;
+  }
+
+  .section-notification h3 {
+    margin-left: 8%;
+  }
+  .section-notification a {
+    margin-right: 10%;
+  }
+  .attribution {
+    font-size: 16px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
