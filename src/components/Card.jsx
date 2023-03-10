@@ -1,7 +1,128 @@
-import React from "react";
+import React, {useState} from "react";
 import { IoRadioButtonOnSharp } from "react-icons/io5";
 
-const Card = ({ notifications, setNotifications }) => {
+
+const Card = () => {
+  const [notifications, setNotifications] = useState(
+    [
+    {
+      id: "1",
+      autor: {
+        name: "Mark Webber",
+        img: "/notifications-page/public/images/avatar-mark-webber.webp",
+        href: "#",
+        alt: "avatar1" 
+      },
+      text: "reacted to your recent post",
+      link: {
+        text: "My first tournament today!",
+        href: "#",
+      },
+      time: "1m ago",
+      hasBeenRead: true,
+    },
+    {
+      id: "2",
+      autor: {
+        name: "Angela Gray ",
+        img: "/notifications-page/public/images/avatar-angela-gray.webp",
+        href: "#",
+        alt: "avatar2" 
+      },
+      text: "followed you",
+      link: {
+        text: "",
+        href: "",
+      },
+      time: "5m ago",
+      hasBeenRead: true,
+    },
+    {
+      id: "3",
+      autor: {
+        name: "Jacob Thompson",
+        img: "/notifications-page/public/images/avatar-jacob-thompson.webp",
+        href: "#",
+        alt: "avatar3" 
+      },
+      text: "has joined your group ",
+      link: {
+        text: "Chess Club",
+        href: "#",
+      },
+      time: " 1 day ago",
+      hasBeenRead: true,
+    },
+    {
+      id: "4",
+      autor: {
+        name: "Rizky Hasanuddin ",
+        img: "/notifications-page/public/images/avatar-rizky-hasanuddin.webp",
+        href: "#",
+        alt: "avatar4" 
+      },
+      text: "sent you a private message ",
+      link: {
+        text: "",
+        href: "",
+      },
+      time: "5 days ago",
+      hasBeenRead: false,
+      message : "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+    },
+    {
+      id: "5",
+      autor: {
+        name: "Kimberly Smith  ",
+        img: "/notifications-page/public/images/avatar-kimberly-smith.webp",
+        href: "#",
+        notificationImg: "/notifications-page/public/images/image-chess.webp",
+        alt: "avatar5" 
+      },
+      text: "commented on your picture ",
+      link: {
+        text: "",
+        href: "",
+      },
+      time: "1 week ago",
+      hasBeenRead: false,
+    },
+    {
+      id: "6",
+      autor: {
+        name: "Nathan Peterson  ",
+        img: "/notifications-page/public/images/avatar-nathan-peterson.webp",
+        href: "#",
+        alt: "avatar6" 
+      },
+      text: "reacted to your recent post",
+      link: {
+        text: "5 end-game strategies to increase your win rate",
+        href: "#",
+      },
+      time: "2 weeks ago",
+      hasBeenRead: false,
+    },
+    {
+      id: "7",
+      autor: {
+        name: "Anna Kim",
+        img: "/notifications-page/public/images/avatar-anna-kim.webp",
+        href: "#",
+        alt: "avatar7" 
+      },
+      text: "left the group",
+      link: {
+        text: "Chess Club",
+        href: "#",
+      },
+      time: "2 weeks ago",
+      hasBeenRead: false,
+    }
+
+  ]  );
+
+  
   
 
   const handleAllClick = () =>{
@@ -23,7 +144,7 @@ const Card = ({ notifications, setNotifications }) => {
 
 
  
-
+  
   return (
     <>
       <section>
@@ -49,6 +170,7 @@ const Card = ({ notifications, setNotifications }) => {
                   }
                 >
                   <img src={element.autor.img} alt={element.autor.alt}/>
+
                   <p>
                     {" "}
                     <span className="user-name">
