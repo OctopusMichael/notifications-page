@@ -9,7 +9,7 @@ function App() {
       id: "1",
       autor: {
         name: "Mark Webber",
-        img: "../public/images/avatar-mark-webber.webp",
+        img: "../public/avatar-mark-webber.webp",
         href: "#",
         alt: "avatar1" 
       },
@@ -25,7 +25,7 @@ function App() {
       id: "2",
       autor: {
         name: "Angela Gray ",
-        img: "../public/images/avatar-angela-gray.webp",
+        img: "../public/avatar-angela-gray.webp",
         href: "#",
         alt: "avatar2" 
       },
@@ -41,7 +41,7 @@ function App() {
       id: "3",
       autor: {
         name: "Jacob Thompson",
-        img: "../public/images/avatar-jacob-thompson.webp",
+        img: "../public/avatar-jacob-thompson.webp",
         href: "#",
         alt: "avatar3" 
       },
@@ -57,7 +57,7 @@ function App() {
       id: "4",
       autor: {
         name: "Rizky Hasanuddin ",
-        img: "../public/images/avatar-rizky-hasanuddin.webp",
+        img: "../public/avatar-rizky-hasanuddin.webp",
         href: "#",
         alt: "avatar4" 
       },
@@ -74,9 +74,9 @@ function App() {
       id: "5",
       autor: {
         name: "Kimberly Smith  ",
-        img: "../images/avatar-kimberly-smith.webp",
+        img: "../public/avatar-kimberly-smith.webp",
         href: "#",
-        notificationImg: "../public/images/image-chess.webp",
+        notificationImg: "../public/image-chess.webp",
         alt: "avatar5" 
       },
       text: "commented on your picture ",
@@ -91,7 +91,7 @@ function App() {
       id: "6",
       autor: {
         name: "Nathan Peterson  ",
-        img: "../public/images/avatar-nathan-peterson.webp",
+        img: "../public/avatar-nathan-peterson.webp",
         href: "#",
         alt: "avatar6" 
       },
@@ -107,7 +107,7 @@ function App() {
       id: "7",
       autor: {
         name: "Anna Kim",
-        img: "../public/images/avatar-anna-kim.webp",
+        img: "../public/avatar-anna-kim.webp",
         href: "#",
         alt: "avatar7" 
       },
