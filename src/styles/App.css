@@ -11,7 +11,7 @@
   /* ### Neutral */
 
   --white: hsl(0, 0%, 100%);
-  --veryLightGrayishBlue: hsl(210, 60%, 98%);
+  --veryLightGrayishBlue: hsla(210, 79%, 87%, 0.418);
   --lightGrayishBlueOne: hsl(211, 68%, 94%);
   --lightGrayishBlueSecond: hsl(205, 33%, 90%);
   --GrayishBlue: hsl(219, 14%, 63%);
@@ -24,6 +24,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
 
 .point-notification {
   color: var(--red);
@@ -116,6 +118,7 @@ body {
 .post a {
   text-decoration: none;
   font-weight: 800;
+  color: var(--blue);
 }
 .post:hover {
   color: var(--blue);
