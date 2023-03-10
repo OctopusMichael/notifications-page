@@ -9,7 +9,7 @@ const Card = () => {
       id: "1",
       autor: {
         name: "Mark Webber",
-        img: "/notifications-page/public/images/avatar-mark-webber.webp",
+        img: "avatar1",
         href: "#",
         alt: "avatar1" 
       },
@@ -25,7 +25,7 @@ const Card = () => {
       id: "2",
       autor: {
         name: "Angela Gray ",
-        img: "/notifications-page/public/images/avatar-angela-gray.webp",
+        img: "avatar2",
         href: "#",
         alt: "avatar2" 
       },
@@ -41,7 +41,7 @@ const Card = () => {
       id: "3",
       autor: {
         name: "Jacob Thompson",
-        img: "/notifications-page/public/images/avatar-jacob-thompson.webp",
+        img: "avatar3",
         href: "#",
         alt: "avatar3" 
       },
@@ -57,7 +57,7 @@ const Card = () => {
       id: "4",
       autor: {
         name: "Rizky Hasanuddin ",
-        img: "/notifications-page/public/images/avatar-rizky-hasanuddin.webp",
+        img: "avatar4",
         href: "#",
         alt: "avatar4" 
       },
@@ -74,9 +74,9 @@ const Card = () => {
       id: "5",
       autor: {
         name: "Kimberly Smith  ",
-        img: "/notifications-page/public/images/avatar-kimberly-smith.webp",
+        img: "avatar5",
         href: "#",
-        notificationImg: "/notifications-page/public/images/image-chess.webp",
+        notificationImg: "notify-img ms-auto",
         alt: "avatar5" 
       },
       text: "commented on your picture ",
@@ -91,7 +91,7 @@ const Card = () => {
       id: "6",
       autor: {
         name: "Nathan Peterson  ",
-        img: "/notifications-page/public/images/avatar-nathan-peterson.webp",
+        img: "avatar6",
         href: "#",
         alt: "avatar6" 
       },
@@ -107,7 +107,7 @@ const Card = () => {
       id: "7",
       autor: {
         name: "Anna Kim",
-        img: "/notifications-page/public/images/avatar-anna-kim.webp",
+        img: "avatar7",
         href: "#",
         alt: "avatar7" 
       },
@@ -169,7 +169,7 @@ const Card = () => {
                     element. hasBeenRead ? "user-notification active " : "user-notification "
                   }
                 >
-                  <img src={element.autor.img} alt={element.autor.alt}/>
+                  <div className={element.autor.img} />
 
                   <p>
                     {" "}
@@ -194,10 +194,7 @@ const Card = () => {
                     </p> }
                    
                   </p>
-                  <img
-                    className="ms-auto"
-                    src={element.autor.notificationImg}
-                  />
+                  <div className={element.autor.notificationImg}/>
                 </div>
               ))}
             </div>

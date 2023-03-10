@@ -24,7 +24,92 @@ body {
   margin: 0;
   padding: 0;
 }
+/************************ image *********************************/
+.avatar1{
+  background-image: url("../images/avatar-mark-webber.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+    height: 50px;
+    padding: 25px;
+    margin-top:15px;
+    margin-right:15px;
+  
+  
+  
+}
+.avatar2{
+  background-image: url("../images/avatar-angela-gray.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  padding: 25px;
+  margin-top:15px;
+  margin-right:15px;
+  
+}
+.avatar3{
+  background-image: url("../images/avatar-jacob-thompson.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  padding: 25px;
+  margin-top:15px;
+  margin-right:15px;
+  
+  
+}
+.avatar4{
+  background-image: url("../images/avatar-rizky-hasanuddin.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  padding: 25px;
+  margin-top:15px;
+  margin-right:15px;
+  
+  
+}
+.avatar5{
+  background-image: url("../images/avatar-kimberly-smith.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  padding: 25px;
+  margin-top:15px;
+  margin-right:15px;
+  
+}
+.avatar6{
+  background-image: url("../images/avatar-nathan-peterson.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  padding: 25px;
+  margin-top:15px;
+  margin-right:15px;
+  
+  
+}
+.avatar7{
+  background-image: url("../images/avatar-anna-kim.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  padding: 25px;
+  margin-top:15px;
+  margin-right:15px;
+}
 
+.notify-img{
+  background-image: url(../images/image-chess.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+  width: 50px;
+  margin-top: 20px;
+  
+  
+}
 
 
 .point-notification {
